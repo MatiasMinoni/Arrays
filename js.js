@@ -68,11 +68,41 @@
 // ------------------------------------------------------------------
 
 
-var champ = [{Id: 0, campeon:"illaoi",estado:true, hp:100, mana:50, atk:10, def:10, mag:10, res:10, spd:10},
-{Id: 1, campeon:"sett",estado:true, hp:100, mana:50, atk:10, def:10, mag:10, res:10, spd:10},
-{Id: 2, campeon:"ornn",estado:true, hp:100, mana:50, atk:10, def:10, mag:10, res:10, spd:10},
-{Id: 3, campeon:"irelia",estado:true, hp:100, mana:50, atk:10, def:10, mag:10, res:10, spd:10},
-{Id: 4, campeon:"veigar",estado:true, hp:100, mana:50, atk:10, def:10, mag:10, res:10, spd:10},
-{Id: 5, campeon:"malphite",estado:true, hp:100, mana:50, atk:10, def:10, mag:10, res:10, spd:10},
-{Id: 6, campeon:"renekton",estado:true, hp:100, mana:50, atk:10, def:10, mag:10, res:10, spd:10},
-];
+let champ = [ "illaoi", "ezreal", "ahri"];
+// // Cuantos campeones hay
+// console.log(champ.length);
+
+// // Agregar Zed al final
+// champ.push({campeon: "zed"})
+// // Agregar Soraka al inicio
+// champ.unshift({campeon: "nunu"})
+// // Eliminar el ultimo campeon
+// champ.pop({campeon: "zed"});
+// // Eliminar varios campeones
+// champ.splice(0,2);
+// // Agregar un caracter entre cada campeon
+// console.log(champ.join("-"));
+
+
+
+
+let stats = [
+    {salud:100},
+    {mana:50},
+    {ataque:10},
+    {defensa:10},
+    {velocidad:10},
+]
+
+let ataques = [
+    {skill0:"basico"},
+    {skill1:"Q"},
+    {skill2:"W"},
+    {skill3:"E"},
+    {skill4:"R"},
+]
+console.log(champ.indexOf("illaoi"));
+const champprueba= champ.concat(stats)
+const champ1= champ.slice(0, 1).concat(stats);
+
+console.log(champ1)
